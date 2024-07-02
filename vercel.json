@@ -26,6 +26,7 @@
   ],
   "env": {
     "DATABASE_URL": "postgres://default:zVscJDvRi73y@ep-holy-mode-a4v9f85k-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require",
-    "YOUTUBE_API_KEY": "AIzaSyA-cnjkstrwbJ_UBZYFdC4U0PReWJiubho"
+    "YOUTUBE_API_KEY": "AIzaSyA-cnjkstrwbJ_UBZYFdC4U0PReWJiubho",
+    "FRONTEND_URL": "http://localhost:3000"
   }
 }

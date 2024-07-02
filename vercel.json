@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/videos",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/api/view",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/api/videoViews",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
+  ],
+  "env": {
+    "DATABASE_URL": "postgres://default:zVscJDvRi73y@ep-holy-mode-a4v9f85k-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require",
+    "YOUTUBE_API_KEY": "AIzaSyA-cnjkstrwbJ_UBZYFdC4U0PReWJiubho"
+  }
+}
